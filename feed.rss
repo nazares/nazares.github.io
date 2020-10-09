@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content"><channel><title>Blog</title><description>A description of Blog</description><link>https://nazares.github.io</link><language>en</language><lastBuildDate>Sat, 10 Oct 2020 00:37:07 +0300</lastBuildDate><pubDate>Sat, 10 Oct 2020 00:37:07 +0300</pubDate><ttl>250</ttl><atom:link href="https://nazares.github.io/feed.rss" rel="self" type="application/rss+xml"/><item><guid isPermaLink="true">https://nazares.github.io/posts/first-post</guid><title>My first post</title><description>A description of my first post.</description><link>https://nazares.github.io/posts/first-post</link><pubDate>Fri, 9 Oct 2020 22:24:00 +0300</pubDate><content:encoded><![CDATA[<h1>My first post</h1><p>My first post's text. Hello I'm Sergei Nazarenko</p><pre><code><span class="keyword">import</span> Foundation
+<span class="keyword">import</span> Publish
+<span class="keyword">import</span> Plot
+<span class="keyword">import</span> SplashPublishPlugin
+
+<span class="comment">// This type acts as the configuration for your website.</span>
+<span class="keyword">struct</span> Blog: <span class="type">Website</span> {
+    <span class="keyword">enum</span> SectionID: <span class="type">String</span>, <span class="type">WebsiteSectionID</span> {
+        <span class="comment">// Add the sections that you want your website to contain here:</span>
+        <span class="keyword">case</span> articles
+        <span class="keyword">case</span> posts
+        <span class="keyword">case</span> about
+    }
+
+    <span class="keyword">struct</span> ItemMetadata: <span class="type">WebsiteItemMetadata</span> {
+        <span class="comment">// Add any site-specific metadata that you want to use here.</span>
+    }
+
+    <span class="comment">// Update these properties to configure your website:</span>
+    <span class="keyword">var</span> url = <span class="type">URL</span>(string: <span class="string">"https://nazares.github.io"</span>)!
+    <span class="keyword">var</span> name = <span class="string">"Blog"</span>
+    <span class="keyword">var</span> description = <span class="string">"A description of Blog"</span>
+    <span class="keyword">var</span> language: <span class="type">Language</span> { .<span class="dotAccess">english</span> }
+    <span class="keyword">var</span> imagePath: <span class="type">Path</span>? { <span class="keyword">nil</span> }
+}
+
+<span class="comment">// This will generate your website using the built-in Foundation theme:</span>
+<span class="keyword">try</span> <span class="type">Blog</span>().<span class="call">publish</span>(
+    withTheme: .<span class="dotAccess">foundation</span>,
+    plugins: [.<span class="call">splash</span>(withClassPrefix: <span class="string">""</span>)]
+)
+</code></pre>]]></content:encoded></item></channel></rss>
