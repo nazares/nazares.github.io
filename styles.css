@@ -3,14 +3,17 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
 blockquote{
 
-  width:60%;
- 
+  
+ font-family: Open Sans;
   font-style:italic;
   color: #555555;
-  padding:0.1em 3px 0.1em 7px;
-  border-left:2px solid #78C0A8 ;
+  padding-left: 0.5em;
+  padding-top: 0.1em;
+  paddind-bottom: 3px;
+  border-left:3px solid #78C0A8 ;
   position: relative;
-  background:#EDEDED;
+  margin-bottom:1em;
+ border-radius:0.2em;
 }
 
 blockquote::before{
@@ -23,9 +26,6 @@ blockquote::before{
   top:-10px;
 }
 
-blockquote::after{
-  content: '';
-}
 
 blockquote span{
   display:block;
@@ -40,6 +40,12 @@ blockquote span{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+ul{
+    padding-left: 1em;
+    margin-bottom: 1em;
+    list-style-type: '-';
 }
 
 body {
@@ -180,17 +186,18 @@ footer {
 /* Splash */
 
 pre {
+    margin-top: 1em;
     margin-bottom: 1.5em;
+    padding: 20px;
     background-color: #f6f8fa;
-    padding: 16px 0;
     border-radius: 16px;
 }
 
 pre code {
     font-family: monospace;
     display: block;
-    padding: 0 20px;
     color: #a9bcbc;
+    padding: 0 20px;
     line-height: 1.4em;
     font-size: 0.95em;
     overflow-x: auto;
@@ -242,6 +249,34 @@ pre code .preprocessing {
     color: red;
 }
 
+li.task-list:before {
+    display: none;
+}
+
+table {
+    color: #333; /* Lighten up font color */
+    font-family: Helvetica, Arial, sans-serif; /* Nicer font */
+    width: 640px;
+    border-collapse:
+    collapse; border-spacing: 0;
+    margin-bottom: 1em;
+    overflow: hidden; border-radius: 10px;
+    border: 1px solid #CCC;
+}
+
+td, th { border: 1px solid #CCC; height: 30px; } /* Make cells a bit taller */
+
+th {
+    background: #F3F3F3; /* Light grey background */
+    text-align: center; /* Center our text */
+    font-weight: bold; /* Make sure they're bold */
+}
+
+td {
+    background: #FAFAFA; /* Lighter grey background */
+    padding-left:0.5em;
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #222;
@@ -259,11 +294,23 @@ pre code .preprocessing {
     header {
         background-color: #000;
     }
+    
     blockquote {
         background-color: #000;
     }
     pre {
       background-color: #1a1a1a
+    }
+    
+    table {
+        color: #ddd;
+    }
+    td, th { border: 1px solid #222; height: 30px; }
+    th {
+        background-color: #000;
+    }
+    td {
+        background-color: #1A1A1A;
     }
 }
 
