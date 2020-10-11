@@ -1,32 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content"><channel><title>Blog</title><description>A description of Blog</description><link>https://nazares.github.io</link><language>en</language><lastBuildDate>Sat, 10 Oct 2020 01:47:48 +0300</lastBuildDate><pubDate>Sat, 10 Oct 2020 01:47:48 +0300</pubDate><ttl>250</ttl><atom:link href="https://nazares.github.io/feed.rss" rel="self" type="application/rss+xml"/><item><guid isPermaLink="true">https://nazares.github.io/posts/first-post</guid><title>My first post</title><description>A description of my first post.</description><link>https://nazares.github.io/posts/first-post</link><pubDate>Fri, 9 Oct 2020 22:24:00 +0300</pubDate><content:encoded><![CDATA[<h1>My first post</h1><p>My first post's text. Hello I'm Sergei Nazarenko</p><pre><code><span class="keyword">import</span> Foundation
-<span class="keyword">import</span> Publish
-<span class="keyword">import</span> Plot
-<span class="keyword">import</span> SplashPublishPlugin
-
-<span class="comment">// This type acts as the configuration for your website.</span>
-<span class="keyword">struct</span> Blog: <span class="type">Website</span> {
-    <span class="keyword">enum</span> SectionID: <span class="type">String</span>, <span class="type">WebsiteSectionID</span> {
-        <span class="comment">// Add the sections that you want your website to contain here:</span>
-        <span class="keyword">case</span> articles
-        <span class="keyword">case</span> posts
-        <span class="keyword">case</span> about
-    }
-
-    <span class="keyword">struct</span> ItemMetadata: <span class="type">WebsiteItemMetadata</span> {
-        <span class="comment">// Add any site-specific metadata that you want to use here.</span>
-    }
-
-    <span class="comment">// Update these properties to configure your website:</span>
-    <span class="keyword">var</span> url = <span class="type">URL</span>(string: <span class="string">"https://nazares.github.io"</span>)!
-    <span class="keyword">var</span> name = <span class="string">"Blog"</span>
-    <span class="keyword">var</span> description = <span class="string">"A description of Blog"</span>
-    <span class="keyword">var</span> language: <span class="type">Language</span> { .<span class="dotAccess">english</span> }
-    <span class="keyword">var</span> imagePath: <span class="type">Path</span>? { <span class="keyword">nil</span> }
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content"><channel><title>Blog</title><description>A description of Blog</description><link>https://nazares.github.io</link><language>en</language><lastBuildDate>Sun, 11 Oct 2020 04:26:08 +0300</lastBuildDate><pubDate>Sun, 11 Oct 2020 04:26:08 +0300</pubDate><ttl>250</ttl><atom:link href="https://nazares.github.io/feed.rss" rel="self" type="application/rss+xml"/><item><guid isPermaLink="true">https://nazares.github.io/posts/first-post</guid><title>Markdown language</title><description>What Markdown actually is?</description><link>https://nazares.github.io/posts/first-post</link><pubDate>Fri, 9 Oct 2020 22:24:00 +0300</pubDate><content:encoded><![CDATA[<h1>Markdown language</h1><blockquote><p>Published: 2020-10-11 1:22 AM</p></blockquote><p>dsds It is easier to explaiin what Markdown is, with a simple example.</p><p>Список дел:</p><ul>
+<li>написать статью про Markdown</li>
+<li>сделать иллюстрации</li>
+<li>отправить текст в редакцию</li>
+</ul><h3>Solar System Exploration, 1950s – 1960s</h3><pre><code>- [ ] <span class="type">Mercury</span>
+- [x] <span class="type">Venus</span>
+- [x] <span class="type">Earth</span> (<span class="type">Orbit</span>/<span class="type">Moon</span>)
+- [x] <span class="type">Mars</span>
+- [ ] <span class="type">Jupiter</span>
+- [ ] <span class="type">Saturn</span>
+- [ ] <span class="type">Uranus</span>
+- [ ] <span class="type">Neptune</span>
+- [ ] <span class="type">Comet Haley</span>
+</code></pre><ul><li>[ ] Mercury</li></ul><pre><code><span class="keyword">struct</span> Book {
+    <span class="keyword">var</span> name: <span class="type">String</span>
+    <span class="keyword">var</span> author: <span class="type">String</span>
+    <span class="keyword">var</span> numberOfStars = <span class="number">0</span>
 }
-
-<span class="comment">// This will generate your website using the built-in Foundation theme:</span>
-<span class="keyword">try</span> <span class="type">Blog</span>().<span class="call">publish</span>(
-    withTheme: .<span class="dotAccess">foundation</span>,
-    plugins: [.<span class="call">splash</span>(withClassPrefix: <span class="string">""</span>)]
-)
+</code></pre><p>$$ d = y^2 $$</p><table><thead><tr><th>Syntax</th><th>Description</th></tr></thead><tbody><tr><td>Header</td><td>Title</td></tr><tr><td>Paragraph</td><td>Text</td></tr></tbody></table><pre><code>{
+  <span class="string">"firstName"</span>: <span class="string">"John"</span>,
+  <span class="string">"lastName"</span>: <span class="string">"Smith"</span>,
+  <span class="string">"age"</span>: <span class="number">25</span>
+}
+</code></pre><p>Here's a sentence with a footnote. [^1]</p><dl>
+  <dt>First Term</dt>
+  <dd>This is the definition of the first term.</dd>
+  <dt>Second Term</dt>
+  <dd>This is one definition of the second term. </dd>
+  <dd>This is another definition of the second term.</dd>
+</dl><p><s>The world is flat.</s> We now know that the world is round. [icon name='icon-emo-coffee'] test</p><span class="wp-font-emots-emo-happy"></span><pre>weeweqweqweq</pre><blockquote><p>some text here</p></blockquote><ul class="task-list">
+ <li class="task-list-item">
+ <input type="checkbox" disabled="disabled"> something</li>
+ <li class="task-list-item">
+ <input type="checkbox" checked="checked" disabled="disabled"> something</li>
+ </ul><p>✅ 🆇 🆅</p>]]></content:encoded></item><item><guid isPermaLink="true">https://nazares.github.io/posts/second-post</guid><title>Title</title><description>A description of my second post.</description><link>https://nazares.github.io/posts/second-post</link><pubDate>Fri, 9 Oct 2020 22:24:00 +0300</pubDate><content:encoded><![CDATA[<h1>Title</h1><p>second post</p><pre><code>function <span class="call">fancyAlert</span>(arg) {
+  <span class="call">if</span>(arg) {
+    $.<span class="call">facebox</span>({div:'#foo'})
+  }
+}
 </code></pre>]]></content:encoded></item></channel></rss>

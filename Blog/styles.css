@@ -1,3 +1,41 @@
+@import 'Blog/emoticons.css';
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
+blockquote{
+
+  width:60%;
+ 
+  font-style:italic;
+  color: #555555;
+  padding:0.1em 3px 0.1em 7px;
+  border-left:2px solid #78C0A8 ;
+  position: relative;
+  background:#EDEDED;
+}
+
+blockquote::before{
+  font-family:Arial;
+  
+  color:#78C0A8;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+blockquote::after{
+  content: '';
+}
+
+blockquote span{
+  display:block;
+  color:#333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -137,36 +175,13 @@ footer {
     color: #8a8a8a;
 }
 
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #222;
-    }
 
-    body,
-    header .site-name {
-        color: #ddd;
-    }
-
-    .item-list > li {
-        background-color: #333;
-    }
-
-    header {
-        background-color: #000;
-    }
-}
-
-@media(max-width: 600px) {
-    .wrapper {
-        padding: 40px 20px;
-    }
-}
 
 /* Splash */
 
 pre {
     margin-bottom: 1.5em;
-    background-color: #1a1a1a;
+    background-color: #f6f8fa;
     padding: 16px 0;
     border-radius: 16px;
 }
@@ -219,3 +234,41 @@ pre code .preprocessing {
     color: #b68a00;
 }
 
+.task-list {
+    list-style-type: none;
+}
+
+.task-list > input {
+    color: red;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #222;
+    }
+
+    body,
+    header .site-name {
+        color: #ddd;
+    }
+
+    .item-list > li {
+        background-color: #333;
+    }
+
+    header {
+        background-color: #000;
+    }
+    blockquote {
+        background-color: #000;
+    }
+    pre {
+      background-color: #1a1a1a
+    }
+}
+
+@media(max-width: 600px) {
+    .wrapper {
+        padding: 40px 20px;
+    }
+}
