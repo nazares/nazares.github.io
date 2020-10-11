@@ -63,8 +63,12 @@ body {
     text-align: left;
 }
 
+header p, header a{
+    color: #fff;
+}
+
 header {
-    background-color: #eee;
+    background-color: #1D1E1F;
 }
 
 header .wrapper {
@@ -75,6 +79,12 @@ header .wrapper {
 
 header a {
     text-decoration: none;
+}
+
+header .logo {
+  width:500px;
+  max-width:80%;
+  margin-bottom: 6px;
 }
 
 header .site-name {
