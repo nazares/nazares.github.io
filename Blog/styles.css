@@ -285,7 +285,7 @@ td {
 }
 
 img[src*="#thumbnail"] {
-   width:200px;
+   width:300px;
 }
 
 @media (prefers-color-scheme: dark) {
