@@ -238,12 +238,13 @@ hr{
 table {
     color: #333; /* Lighten up font color */
     font-family: Helvetica, Arial, sans-serif; /* Nicer font */
-    width: 640px;
     border-collapse:
     collapse; border-spacing: 0;
     margin-bottom: 1em;
     overflow: hidden; border-radius: 10px;
     border: 1px solid #CCC;
+    table-layout: fixed;
+    width:100%;
 }
 
 td, th { border: 1px solid #CCC; height: 30px; } /* Make cells a bit taller */
@@ -368,10 +369,7 @@ iframe {
     .wrapper {
         padding: 40px 20px;
     }
-    table {
-        width: 600px;
-        max-width:100%;
-    }
+    
     iframe {
         width:600px;
         max-width:100%;
