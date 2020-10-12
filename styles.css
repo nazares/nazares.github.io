@@ -328,7 +328,7 @@ img[src*="#thumbnail"] {
 
 @media(max-width: 600px) {
     img[src*="#thumbnail"] {
-       width:200px;
+       width:300px;
        max-width:50%;
     }
     .wrapper {
