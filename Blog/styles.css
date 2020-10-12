@@ -3,7 +3,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
 blockquote{
 
-  
  font-family: Open Sans;
   font-style:italic;
   color: #555555;
@@ -192,7 +191,6 @@ footer {
 }
 
 
-
 /* Splash */
 
 pre {
@@ -286,6 +284,8 @@ td {
     background: #FAFAFA; /* Lighter grey background */
     padding-left:0.5em;
 }
+
+
 
 @media (prefers-color-scheme: dark) {
     body {
