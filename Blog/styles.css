@@ -368,6 +368,10 @@ iframe {
     .wrapper {
         padding: 40px 20px;
     }
+    table {
+        width: 600px;
+        max-width:100%;
+    }
     iframe {
         width:600px;
         max-width:100%;
