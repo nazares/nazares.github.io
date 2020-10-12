@@ -1,39 +1,7 @@
 @import 'Blog/emoticons.css';
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
-blockquote{
-
- font-family: Open Sans;
-  font-style:italic;
-  color: #555555;
-  padding-left: 0.5em;
-  padding-top: 0.1em;
-  paddind-bottom: 3px;
-  border-left:3px solid #78C0A8 ;
-  position: relative;
-  margin-bottom:1em;
- border-radius:0.2em;
-}
-
-blockquote::before{
-  font-family:Arial;
-  
-  color:#78C0A8;
-  font-size:4em;
-  position: absolute;
-  left: 10px;
-  top:-10px;
-}
-
-
-blockquote span{
-  display:block;
-  color:#333333;
-  font-style: normal;
-  font-weight: bold;
-  margin-top:1em;
-}
-
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
 
 * {
     margin: 0;
@@ -115,6 +83,7 @@ h2 {
 }
 
 p {
+    margin-top: 5px;
     margin-bottom: 10px;
 }
 
@@ -149,6 +118,7 @@ a {
 
 .tag-list {
     margin-bottom: 15px;
+    display: inline-block;
 }
 
 .tag-list li,
@@ -260,6 +230,11 @@ li.task-list:before {
     display: none;
 }
 
+hr{
+    border:none;
+    border-top:1px dashed #f1f1f1;
+}
+
 table {
     color: #333; /* Lighten up font color */
     font-family: Helvetica, Arial, sans-serif; /* Nicer font */
@@ -288,6 +263,61 @@ img[src*="#thumbnail"] {
    width:300px;
 }
 
+.date {
+    font-size: 10pt;
+    color:#999;
+    font-weight:100;
+}
+
+blockquote{
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 1px;
+    background-color: #EEEEEE;
+    font-family: 'Marck Script';
+    font-style:italic;
+    font-size: 18pt;
+    color: #555555;
+    padding 0.5em;
+    border-left:3px solid #C25052 ;
+    position: relative;
+    margin-bottom:1em;
+    border-radius: 0 20px 20px 0;
+}
+
+blockquote::before{
+  
+  color:#78C0A8;
+  
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+
+blockquote span{
+  display:block;
+  color:#C25052;
+  font-family: 'Open Sans';
+  
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  margin-right: 20pt;
+  margin-top:1em;
+}
+
+.highlight {
+    border: 1px solid rgba(0, 0, 0, 0.31);
+    border-radius: 10px;
+    padding:2px 5px;
+}
+
+iframe {
+    display: block;
+    margin:auto;
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #222;
@@ -306,9 +336,6 @@ img[src*="#thumbnail"] {
         background-color: #000;
     }
     
-    blockquote {
-        background-color: #000;
-    }
     pre {
       background-color: #1a1a1a
     }
@@ -323,6 +350,14 @@ img[src*="#thumbnail"] {
     td {
         background-color: #1A1A1A;
     }
+    
+    blockquote {
+        background-color: #1A1A1A;
+    }
+    
+    hr{
+        border-top:1px dashed #343434;
+    }
 }
 
 @media(max-width: 600px) {
@@ -332,5 +367,9 @@ img[src*="#thumbnail"] {
     }
     .wrapper {
         padding: 40px 20px;
+    }
+    iframe {
+        width:600px;
+        max-width:100%;
     }
 }
