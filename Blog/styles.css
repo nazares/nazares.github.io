@@ -275,12 +275,13 @@ img[src*="#thumbnail"] {
 
 blockquote{
     padding-top: 5px;
-    padding-left: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-bottom: 1px;
     background-color: #EEEEEE;
     font-family: 'Marck Script';
     font-style:italic;
-    font-size: 12pt;
+    font-size: 14pt;
     color: #555555;
     padding 0.5em;
     border-left:3px solid #C25052 ;
@@ -307,7 +308,7 @@ blockquote span{
   font-style: normal;
   font-weight: bold;
   text-align: right;
-  margin-right: 20pt;
+  
   margin-top:1em;
 }
 
