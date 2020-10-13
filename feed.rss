@@ -1,39 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content"><channel><title>Sergei Nazarenko</title><description>A description of Blog</description><link>https://nazares.github.io</link><language>en</language><lastBuildDate>Tue, 13 Oct 2020 13:32:40 +0300</lastBuildDate><pubDate>Tue, 13 Oct 2020 13:32:40 +0300</pubDate><ttl>250</ttl><atom:link href="https://nazares.github.io/feed.rss" rel="self" type="application/rss+xml"/><item><guid isPermaLink="true">https://nazares.github.io/articles/first-post</guid><title>Markdown</title><description>What Markdown actually is?</description><link>https://nazares.github.io/articles/first-post</link><pubDate>Fri, 9 Oct 2020 22:24:00 +0300</pubDate><content:encoded><![CDATA[<h1>Markdown language</h1><p>dsds It is easier to <span class="highlight">explaiin</span> what Markdown is, with a simple example.</p><p>Список дел:</p><ul>
-<li>написать статью про Markdown</li>
-<li>сделать иллюстрации</li>
-<li>отправить текст в редакцию</li>
-</ul><h3>Solar System Exploration, 1950s – 1960s</h3><pre><code>- [ ] <span class="type">Mercury</span>
-- [x] <span class="type">Venus</span>
-- [x] <span class="type">Earth</span> (<span class="type">Orbit</span>/<span class="type">Moon</span>)
-- [x] <span class="type">Mars</span>
-- [ ] <span class="type">Jupiter</span>
-- [ ] <span class="type">Saturn</span>
-- [ ] <span class="type">Uranus</span>
-- [ ] <span class="type">Neptune</span>
-- [ ] <span class="type">Comet Haley</span>
-</code></pre><ul><li>[ ] Mercury ---</li></ul><pre><code><span class="keyword">struct</span> Book {
-span <span class="keyword">class</span>=<span class="string">"highlight"</span>&gt;<span class="keyword">var</span> name: <span class="type">String</span> 
-<span class="keyword">var</span> author: <span class="type">String</span>
-    <span class="keyword">var</span> numberOfStars = <span class="number">0</span>
-}
-</code></pre><hr><p>$$ d = y^2 $$</p><table><thead><tr><th>Syntax</th><th>Description</th></tr></thead><tbody><tr><td>Header</td><td>Title</td></tr><tr><td>Paragraph</td><td>Text</td></tr></tbody></table><pre><code>{
-  <span class="string">"firstName"</span>: <span class="string">"John"</span>,
-  &lt;b&gt;<span class="string">"lastName"</span>: <span class="string">"Smith"</span>,&lt;/b&gt;
-  <span class="string">"age"</span>: <span class="number">25</span>
-}
-</code></pre><p>Here's a sentence with a footnote. [^1]</p><dl>
-  <dt>First Term</dt>
-  <dd>This is the definition of the first term.</dd>
-  <dt>Second Term</dt>
-  <dd>This is one definition of the second term. </dd>
-  <dd>This is another definition of the second term.</dd>
-</dl><p><s>The world is flat.</s> We now know that the world is round. [icon name='icon-emo-coffee'] test</p><span class="wp-font-emots-emo-happy"></span><p><code>weeweqweqweq</code></p><pre><code>cxcxcxcxc
-</code></pre><pre>something </pre><blockquote><p>some text here</p></blockquote><ul class="task-list">
- <li class="task-list-item">
- <input type="checkbox" disabled="disabled"> something</li>
- <li class="task-list-item">
- <input type="checkbox" checked="checked" disabled="disabled"> something</li>
- </ul><p>✅ 🆇 🆅</p><iframe width="560" height="315" src="https://www.youtube.com/embed/SvqF7cQiWXw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>ракаракака</p><p>$-b pm sqrt{b^2 - 4ac} over 2a$ $x = a<em>0 + frac{1}{a</em>1 + frac{1}{a<em>2 + frac{1}{a</em>3 + a_4}}}$ $forall x in X, quad exists y leq epsilon$</p>]]></content:encoded></item><item><guid isPermaLink="true">https://nazares.github.io/articles/third-post</guid><title>Third</title><description>A description of my second post.</description><link>https://nazares.github.io/articles/third-post</link><pubDate>Fri, 9 Oct 2020 14:54:00 +0300</pubDate><content:encoded><![CDATA[<h1>Third post</h1><span class="wp-font-emots-emo-happy"></span><br>
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content"><channel><title>Sergei Nazarenko</title><description>A description of Blog</description><link>https://nazares.github.io</link><language>en</language><lastBuildDate>Tue, 13 Oct 2020 15:15:58 +0300</lastBuildDate><pubDate>Tue, 13 Oct 2020 15:15:58 +0300</pubDate><ttl>250</ttl><atom:link href="https://nazares.github.io/feed.rss" rel="self" type="application/rss+xml"/><item><guid isPermaLink="true">https://nazares.github.io/articles/first-post</guid><title>Markdown</title><description>What Markdown actually is?</description><link>https://nazares.github.io/articles/first-post</link><pubDate>Fri, 9 Oct 2020 22:24:00 +0300</pubDate><content:encoded><![CDATA[<h1>Markdown language</h1>]]></content:encoded></item><item><guid isPermaLink="true">https://nazares.github.io/articles/third-post</guid><title>Third</title><description>A description of my second post.</description><link>https://nazares.github.io/articles/third-post</link><pubDate>Fri, 9 Oct 2020 14:54:00 +0300</pubDate><content:encoded><![CDATA[<h1>Third post</h1><span class="wp-font-emots-emo-happy"></span><br>
 <span class="wp-font-emots-emo-thumbsup"></span><br>
 <span class="wp-font-emots-emo-coffee"></span>
 <span class="wp-font-emots-emo-grin"></span>
@@ -54,12 +19,5 @@ span <span class="keyword">class</span>=<span class="string">"highlight"</span>&
 
 <i class="far fa-clock"></i>
 
-<img src="http://latex.numberempire.com/render?{x}_{1,2}=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" 
-      alt="Корни квадратного уравнения">
-<img src="http://latex.numberempire.com/render?\huge {x}_{1,2}=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" 
-            alt="Корни квадратного уравнения">      
 
-<pre lang="eq.latex">
-\!i\hbar\frac{\partial}{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi
-</pre>
 ]]></content:encoded></item></channel></rss>

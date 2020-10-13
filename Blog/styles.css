@@ -314,6 +314,37 @@ iframe {
     margin:auto;
 }
 
+.socials a {
+    font-size: 30pt;
+    text-decoration: none;
+    letter-spacing: 4pt;
+    color:#e5e5e5;
+    transition: 3s;
+}
+
+.fa-telegram:hover {
+    color:#58AAE8;
+}
+.fa-twitter:hover {
+    color: #2592D7;
+}
+
+.fa-github:hover {
+    color: #000;
+}
+.fa-facebook:hover {
+    color: #177AE5;
+}
+
+.fa-youtube:hover {
+    color: #FC0D1B;
+}
+
+.socials {
+    padding-top: 15pt;
+    padding-bottom:15pt;
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #222;
