@@ -280,7 +280,7 @@ blockquote{
     background-color: #EEEEEE;
     font-family: 'Marck Script';
     font-style:italic;
-    font-size: 18pt;
+    font-size: 12pt;
     color: #555555;
     padding 0.5em;
     border-left:3px solid #C25052 ;
@@ -303,7 +303,7 @@ blockquote span{
   display:block;
   color:#C25052;
   font-family: 'Open Sans';
-  
+  font-size:10pt;
   font-style: normal;
   font-weight: bold;
   text-align: right;
