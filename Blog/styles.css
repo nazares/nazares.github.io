@@ -168,6 +168,7 @@ pre {
     padding: 20px;
     background-color: #f6f8fa;
     border-radius: 16px;
+    word-wrap: break-word;
 }
 
 pre code {
@@ -338,7 +339,7 @@ iframe {
     }
 
     header {
-        background-color: #000;
+        background-color: #0F2E54;
     }
     
     pre {
