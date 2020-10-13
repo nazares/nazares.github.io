@@ -262,6 +262,9 @@ td {
 
 img[src*="#thumbnail"] {
    width:300px;
+   border: 15px solid #fff;
+   box-shadow: 0 0 5px 1px #888;
+   border-radius: 10px;
 }
 
 .date {
