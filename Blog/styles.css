@@ -355,6 +355,7 @@ ul:not(.menu, .tag-list, .task-list, .item-list, .all-tags) li:before {
 input[type="checkbox"] {
     margin-right: 5px;
     pointer-events: none;
+    
 }
 
 
