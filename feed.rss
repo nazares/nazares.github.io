@@ -1,4 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content"><channel><title>Sergei Nazarenko</title><description>A description of Blog</description><link>https://nazares.github.io</link><language>en</language><lastBuildDate>Tue, 13 Oct 2020 17:41:48 +0300</lastBuildDate><pubDate>Tue, 13 Oct 2020 17:41:48 +0300</pubDate><ttl>250</ttl><atom:link href="https://nazares.github.io/feed.rss" rel="self" type="application/rss+xml"/><item><guid isPermaLink="true">https://nazares.github.io/articles/first-post</guid><title>Markdown</title><description>What Markdown actually is?</description><link>https://nazares.github.io/articles/first-post</link><pubDate>Fri, 9 Oct 2020 22:24:00 +0300</pubDate><content:encoded><![CDATA[<h1>Markdown language</h1>]]></content:encoded></item><item><guid isPermaLink="true">https://nazares.github.io/articles/third-post</guid><title>Third</title><description>A description of my second post.</description><link>https://nazares.github.io/articles/third-post</link><pubDate>Fri, 9 Oct 2020 14:54:00 +0300</pubDate><content:encoded><![CDATA[<h1>Third post</h1><span class="wp-font-emots-emo-happy"></span><br>
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content"><channel><title>Sergei Nazarenko</title><description>A description of Blog</description><link>https://nazares.github.io</link><language>en</language><lastBuildDate>Wed, 14 Oct 2020 15:49:11 +0300</lastBuildDate><pubDate>Wed, 14 Oct 2020 15:49:11 +0300</pubDate><ttl>250</ttl><atom:link href="https://nazares.github.io/feed.rss" rel="self" type="application/rss+xml"/><item><guid isPermaLink="true">https://nazares.github.io/articles/first-post</guid><title>Markdown</title><description>What Markdown actually is?</description><link>https://nazares.github.io/articles/first-post</link><pubDate>Fri, 9 Oct 2020 22:24:00 +0300</pubDate><content:encoded><![CDATA[<h1>Markdown language</h1><ul><li>item one</li><li>item two</li><li>item three</li></ul><pre><code><span class="keyword">import</span> Foundation
+<span class="keyword">import</span> Publish
+<span class="keyword">import</span> Plot
+<span class="keyword">import</span> SplashPublishPlugin
+
+<span class="comment">// This type acts as the configuration for your website.</span>
+<span class="keyword">struct</span> Blog: <span class="type">Website</span> {
+    <span class="keyword">enum</span> SectionID: <span class="type">String</span>, <span class="type">WebsiteSectionID</span> {
+        <span class="comment">// Add the sections that you want your website to contain here:</span>
+        <span class="keyword">case</span> articles
+        <span class="keyword">case</span> about
+    }
+
+    <span class="keyword">struct</span> ItemMetadata: <span class="type">WebsiteItemMetadata</span> {
+        <span class="comment">// Add any site-specific metadata that you want to use here.</span>
+    }
+
+    <span class="comment">// Update these properties to configure your website:</span>
+    <span class="keyword">var</span> url = <span class="type">URL</span>(string: <span class="string">"https://nazares.github.io"</span>)!
+    <span class="keyword">var</span> name = <span class="string">"Sergei Nazarenko"</span>
+    <span class="keyword">var</span> description = <span class="string">"A description of Blog"</span>
+    <span class="keyword">var</span> language: <span class="type">Language</span> { .<span class="dotAccess">english</span> }
+    <span class="keyword">var</span> lang: <span class="type">String</span>?
+    <span class="keyword">var</span> imagePath: <span class="type">Path</span>? { <span class="keyword">nil</span> }
+}
+<span class="comment">// This will generate your website using the built-in Foundation theme:</span>
+<span class="keyword">try</span> <span class="type">Blog</span>().<span class="call">publish</span>(
+    withTheme: .<span class="dotAccess">blog</span>,
+    deployedUsing: .<span class="call">gitHub</span>(<span class="string">"nazares/nazares.github.io"</span>, useSSH: <span class="keyword">false</span>),
+    plugins: [.<span class="call">splash</span>(withClassPrefix: <span class="string">""</span>)]
+)
+</code></pre><ul class="task-list">
+    <li><input type='checkbox' />unchecked</span></li>
+    <li ><input type='checkbox' checked/>Checked</li>
+</ul>]]></content:encoded></item><item><guid isPermaLink="true">https://nazares.github.io/articles/third-post</guid><title>Third</title><description>A description of my second post.</description><link>https://nazares.github.io/articles/third-post</link><pubDate>Fri, 9 Oct 2020 14:54:00 +0300</pubDate><content:encoded><![CDATA[<h1>Third post</h1><span class="wp-font-emots-emo-happy"></span><br>
 <span class="wp-font-emots-emo-thumbsup"></span><br>
 <span class="wp-font-emots-emo-coffee"></span>
 <span class="wp-font-emots-emo-grin"></span>

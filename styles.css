@@ -344,6 +344,19 @@ iframe {
     padding-top: 15pt;
     padding-bottom:15pt;
 }
+ul {
+    list-style-type: none;
+}
+
+ul:not(.menu, .tag-list, .task-list, .item-list, .all-tags) li:before {
+    content: "– ";
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+    pointer-events: none;
+}
+
 
 @media (prefers-color-scheme: dark) {
     body {
