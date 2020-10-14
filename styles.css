@@ -29,7 +29,7 @@ header p, header a{
 }
 
 header {
-    background-color:#34404E;
+    background-color:#2D2D2F;
 }
 
 header .wrapper {
@@ -341,9 +341,12 @@ iframe {
 }
 
 .socials {
-    padding-top: 15pt;
-    padding-bottom:15pt;
+    width: 300px;
+    padding: 15pt;
+    margin: auto;
+    text-align:center;
 }
+
 ul {
     list-style-type: none;
 }
@@ -373,7 +376,9 @@ input[type="checkbox"] {
         background-color: #333;
     }
 
-    
+    .socials a {
+        color: #343434;
+    }
     
     pre {
       background-color: #1a1a1a
