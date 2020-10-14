@@ -400,6 +400,6 @@ iframe {
     }
     
     .date {
-        display block;
+        display: block;
     }
 }
