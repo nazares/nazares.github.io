@@ -29,7 +29,7 @@ header p, header a{
 }
 
 header {
-    background-color: #333D50;
+    background-color:#34404E;
 }
 
 header .wrapper {
@@ -359,9 +359,7 @@ iframe {
         background-color: #333;
     }
 
-    header {
-        background-color: #0F2E54;
-    }
+    
     
     pre {
       background-color: #1a1a1a
