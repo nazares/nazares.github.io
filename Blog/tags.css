@@ -1,0 +1,39 @@
+.macos {
+    background-color: #3E7E86 !important;
+}
+
+.ios, .tvos, .watchos, .ipados, {
+   background-color: #4B7D96 !important;
+}
+
+.android,  {}
+
+/* Markup languages */
+
+.markdown, .css, .bbcode, .restructuredtext, textile, .tex, .latex, .sgml, .postscript, .rtf, .html, .xhtml, .xml, .vml, .pgml, .svg, .xbrl, .javadoc {
+    background-color: #54569A !important;
+}
+
+/* Locales */
+.en {
+    background-color: #1672DE !important;
+}
+
+.ru {
+    background-color: #DE3A43 !important;
+}
+
+
+.swift, .objective-c {
+    background-color: #3B8367 !important;
+}
+
+.c, li[class*="c++"], li[class*="c#"] {
+    background-color: green !important;
+}
+
+li.tag {
+    margin-bottom: 0.5em;
+}
+
+

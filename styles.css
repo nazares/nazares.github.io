@@ -1,5 +1,5 @@
 @import 'Blog/emoticons.css';
-
+@import 'Blog/tags.css'; 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
 
@@ -68,6 +68,7 @@ nav li {
 
 nav li a.selected {
     text-decoration: underline;
+    color: #C25052;
 }
 
 h1 {
@@ -419,6 +420,31 @@ p.info{
     color: #1073AF;
     font-family: "Font Awesome 5 Free";
     content: '\f05a\00a0Info';
+}
+
+.tagged {
+    color: #DE3A43;
+}
+
+a{
+    transition: 1s;
+}
+
+a:hover {
+    color: #DE3A43;
+}
+
+.tag a {
+    color: #fff !important;
+}
+
+.articles:before {
+    font-family: "Font Awesome 5 Free";
+    content: '\f15c';
+}
+.how-to:before {
+    font-family: "Font Awesome 5 Free";
+    content: '\f02d';
 }
 
 @media (prefers-color-scheme: dark) {
