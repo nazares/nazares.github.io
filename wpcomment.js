@@ -1,8 +1,11 @@
-var metypeContainer = document.getElementById("metype-container"),
-    page_url = metypeContainer.getAttribute("data-metype-page-url");
-  metypeContainer.setAttribute('data-metype-page-url', page_url || window.location.href);
-  metypeContainer.setAttribute('data-metype-window-height', window.innerHeight);
-  metypeContainer.setAttribute('data-metype-screen-width', window.screen.width);
-  talktype(function() {
-    talktype.commentWidgetIframe(metypeContainer);
-  });
+wpac_init = window.wpac_init || [];
+wpac_init.push({widget: 'CommentRecent', id: 27759});
+(function() {
+    if ('WIDGETPACK_LOADED' in window) return;
+    WIDGETPACK_LOADED = true;
+    var mc = document.createElement('script');
+    mc.type = 'text/javascript';
+    mc.async = true;
+    mc.src = 'https://embed.widgetpack.com/widget.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+})();
