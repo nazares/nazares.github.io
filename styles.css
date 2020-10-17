@@ -447,6 +447,11 @@ a:hover {
     content: '\f02d';
 }
 
+#graphcomment {
+    width:600px;
+    height:auto;
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #222;
