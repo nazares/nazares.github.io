@@ -368,7 +368,11 @@ ul:not(.menu, .tag-list, .task-list, .item-list, .all-tags, [class*="Mui"], [cla
 }
 
 .dAvxTh {
-    margin-bottom: -50px !important;
+    padding-bottom: 0 !important;
+}
+
+.foot {
+    margin-top:1em;
 }
 
 header[class*="sc"] {
