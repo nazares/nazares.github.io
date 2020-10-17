@@ -371,10 +371,6 @@ ul:not(.menu, .tag-list, .task-list, .item-list, .all-tags, [class*="Mui"], [cla
     margin-bottom: -50px !important;
 }
 
-a[target="_blank"] {
-    display:none !important;
-}
-
 header[class*="sc"] {
     border-radius: 16px;
     padding: 1em;
@@ -533,6 +529,10 @@ a:hover {
     
     .date {
         display: block;
+    }
+    
+    .hXtGXC {
+        margin-bottom: 0.5em;
     }
 
 }
