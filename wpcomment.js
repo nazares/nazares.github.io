@@ -1,11 +1,11 @@
-wpac_init = window.wpac_init || [];
-wpac_init.push({widget: 'CommentRecent', id: 27759});
-(function() {
-    if ('WIDGETPACK_LOADED' in window) return;
-    WIDGETPACK_LOADED = true;
-    var mc = document.createElement('script');
-    mc.type = 'text/javascript';
-    mc.async = true;
-    mc.src = 'https://embed.widgetpack.com/widget.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
-})();
+AnyComment = window.AnyComment || []; AnyComment.Comments = [];
+AnyComment.Comments.push({
+    "root": "anycomment-app",
+    "app_id": 1524,
+    "language": "ru"
+})
+var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+s.src = "https://widget.anycomment.io/comment/embed.js";
+var sa = document.getElementsByTagName("script")[0];
+sa.parentNode.insertBefore(s, s.nextSibling);
+
