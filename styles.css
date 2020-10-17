@@ -369,6 +369,10 @@ input[type="checkbox"] {
     
 }
 
+.anycomment-app li:before {
+    content:"";
+}
+
 p.note {
     background-color: #f0f7fb;
     background-position: 9px 0px;
