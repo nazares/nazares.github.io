@@ -447,10 +447,7 @@ a:hover {
     content: '\f02d';
 }
 
-#graphcomment {
-    width:600px;
-    height:auto;
-}
+
 
 @media (prefers-color-scheme: dark) {
     body {
@@ -512,10 +509,6 @@ a:hover {
     .date {
         display: block;
     }
-    #graphcomment {
-        max-width:50%;
-        height:auto;
-    }
-}
+
 
 
