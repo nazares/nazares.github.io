@@ -371,7 +371,7 @@ ul:not(.menu, .tag-list, .task-list, .item-list, .all-tags) li:before {
     content: "– ";
 }
 
-ul:not([class*="Mui"]) li:before {
+ul[class*="Mui"]) li:before {
     content:"";
 }
 
