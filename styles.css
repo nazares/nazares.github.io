@@ -1,5 +1,5 @@
 @import 'Blog/emoticons.css';
-@import 'Blog/tags.css'; 
+@import 'Blog/tags.css';
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
 
@@ -7,6 +7,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+
+.lowIgj {
+    color: #8a8a8a;
+    margin-top: -1em;
+    transition: 1s;
+}
+.lowIgj:hover {
+    color: #C25052;
+    margin-top: -1em;
 }
 
 body {
@@ -477,6 +488,10 @@ a:hover {
     margin-top: 10px !important;
 }
 
+a[data-test-id*="login"]:hover {
+    color: #C25052
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #222;
@@ -521,6 +536,10 @@ a:hover {
     .iHWybi, .vTcAG {
         color: #aaa;
     }
+    
+    a[data-test-id*="login"] {
+        color: #eee;
+    }
    
 }
 
@@ -548,3 +567,5 @@ a:hover {
     }
 
 }
+
+
