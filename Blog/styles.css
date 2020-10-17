@@ -368,7 +368,7 @@ ul:not(.menu, .tag-list, .task-list, .item-list, .all-tags) li:before {
 }
 
 ul[class*="Mui"]) li:before {
-    content:"" !important;
+    content:"=" !important;
 }
 
 ul[class*="sc"] li:before {
