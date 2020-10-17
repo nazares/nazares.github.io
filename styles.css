@@ -363,14 +363,14 @@ ul:not(.menu, .tag-list, .task-list, .item-list, .all-tags) li:before {
     content: "– ";
 }
 
+ul[class*="sc"] li:before {
+    content: "" !important;
+}
+
 input[type="checkbox"] {
     margin-right: 5px;
     pointer-events: none;
     
-}
-
-.anycomment-app li:before {
-    content:"";
 }
 
 p.note {
