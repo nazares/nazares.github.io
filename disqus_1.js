@@ -1,7 +1,4 @@
-talktype(function() {
-    var pageUrl = window.location.href;
-    var pageMetadata = < metadata - object - here > ;
-    var accountId = '1000699';
-    var metypeHost = 'https://www.metype.com/';
-    talktype.pageMetadataSetter(accountId, pageUrl, pageMetadata, metypeHost);
-  });
+const commentBox = require('commentbox.io');
+// or if using the CDN, it will be available as a global "commentBox" variable.
+
+commentBox('my-project-id');
