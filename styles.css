@@ -367,6 +367,10 @@ ul:not(.menu, .tag-list, .task-list, .item-list, .all-tags, [class*="Mui"], [cla
     content: "– ";
 }
 
+.dAvxTh {
+    margin-bottom: 1em !important;
+}
+
 header[class*="sc"] {
     border-radius: 16px;
     padding: 1em;
