@@ -363,16 +363,8 @@ ul {
     list-style-type: none;
 }
 
-ul:not(.menu, .tag-list, .task-list, .item-list, .all-tags) li:before {
+ul:not(.menu, .tag-list, .task-list, .item-list, .all-tags, [class*="Mui"], [class*="sc"]) li:before {
     content: "– ";
-}
-
-ul[class*="Mui"]) li:before {
-    content:"=" !important;
-}
-
-ul[class*="sc"] li:before {
-    content: "" !important;
 }
 
 header[class*="sc"] {
