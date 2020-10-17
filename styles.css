@@ -368,7 +368,7 @@ ul:not(.menu, .tag-list, .task-list, .item-list, .all-tags, [class*="Mui"], [cla
 }
 
 .dAvxTh {
-    margin-bottom: 1em !important;
+    margin-bottom: -50px !important;
 }
 
 header[class*="sc"] {
