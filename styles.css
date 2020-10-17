@@ -465,6 +465,13 @@ a:hover {
     padding-bottom:0;
 }
 
+.ekttti {
+    margin:auto;
+}
+.logiML {
+    margin-top: 10px !important;
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #222;
