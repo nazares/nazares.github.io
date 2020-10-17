@@ -367,6 +367,10 @@ ul[class*="sc"] li:before {
     content: "" !important;
 }
 
+div[class*="sc"] p {
+    color: #eee;
+}
+
 header[class*="sc"] {
     border-radius: 16px;
     padding: 1em;
@@ -518,8 +522,9 @@ a:hover {
     .date {
         display: block;
     }
+    
     #anycomment-app {
-        color: #eee;
+        color: #fff !important;
     }
 
 }
