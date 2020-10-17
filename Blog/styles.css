@@ -20,6 +20,10 @@
     margin-top: -1em;
 }
 
+button.ktwrLZ:hover {
+    background-color: #c15a5b;
+}
+
 body {
     background: #fff;
     color: #000;
