@@ -464,7 +464,10 @@ a:hover {
     content: '\f02d';
 }
 
-
+#mycomment-app {
+    padding-top: 1em;
+    padding-bottom:0;
+}
 
 @media (prefers-color-scheme: dark) {
     body {
