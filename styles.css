@@ -359,16 +359,10 @@ ul {
     list-style-type: none;
 }
 
-ul:not(.menu, .tag-list, .task-list, .item-list, .all-tags) li:before {
-    content: "– ";
-}
+
 
 ul[class*="sc"] li:before {
     content: "" !important;
-}
-
-div[class*="sc"] p {
-    color: #eee;
 }
 
 header[class*="sc"] {
@@ -502,6 +496,10 @@ a:hover {
     hr{
         border-top:1px dashed #343434;
     }
+    
+    div[class*="sc"] p {
+        color: #fff;
+    }
 }
 
 @media(max-width: 600px) {
@@ -521,10 +519,6 @@ a:hover {
     
     .date {
         display: block;
-    }
-    
-    #anycomment-app {
-        color: #fff !important;
     }
 
 }
