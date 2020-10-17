@@ -373,6 +373,7 @@ ul:not(.menu, .tag-list, .task-list, .item-list, .all-tags, [class*="Mui"], [cla
 
 .foot {
     margin-top:1em;
+    font-size:10pt;
 }
 
 header[class*="sc"] {
