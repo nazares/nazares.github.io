@@ -372,7 +372,7 @@ ul:not(.menu, .tag-list, .task-list, .item-list, .all-tags, [class*="Mui"], [cla
 }
 
 a[target="_blank"] {
-    display:none;
+    display:none !important;
 }
 
 header[class*="sc"] {
