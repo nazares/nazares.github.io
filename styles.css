@@ -11,7 +11,7 @@
 
 
 .lowIgj {
-    color: #8a8a8a;
+    color: #8a8a8a !important;
     margin-top: -1em;
     transition: 1s;
 }
