@@ -161,6 +161,10 @@ footer {
     color: #8a8a8a;
 }
 
+#anycomment-app {
+    color#000;
+}
+
 
 /* Splash */
 
@@ -359,7 +363,9 @@ ul {
     list-style-type: none;
 }
 
-
+ul:not(.menu, .tag-list, .task-list, .item-list, .all-tags) li:before {
+    content: "– ";
+}
 
 ul[class*="sc"] li:before {
     content: "" !important;
