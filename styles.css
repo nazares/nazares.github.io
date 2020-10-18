@@ -9,6 +9,18 @@
     box-sizing: border-box;
 }
 
+.red{
+    color: #DE3A43;
+}
+.blue {
+    color: #1672DE;
+}
+
+.lang.red, .lang.blue{
+    position: absolute;
+    margin-left: -40px;
+    margin-top: -3px;
+}
 
 .lowIgj {
     color: #8a8a8a;
