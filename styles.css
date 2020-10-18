@@ -1,12 +1,25 @@
 @import 'Blog/emoticons.css';
 @import 'Blog/tags.css';
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+/* @import url(https://fonts.googleapis.com/css?family=Open+Sans); */
 @import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.wrapper p{
+    font-family: Helvetica Neue, Arial;
+    font-weight:300;
+    line-height: 1.5em;
+}
+
+.quote {
+    font-family: Caveat;
+    font-size:16pt;
+    color: #ffaa10;
 }
 
 .red{
@@ -18,12 +31,16 @@
 
 .lowIgj {
     color: #8a8a8a;
-    margin-top: -1em;
+    margin-top: -0.5em;
     transition: 1s;
 }
+
 .lowIgj:hover {
     color: #C25052;
-    margin-top: -1em;
+}
+
+a[href*="/privacy"]:hover, a[href*="/terms"]:hover {
+    color: #C25052;
 }
 
 button.ktwrLZ:hover {
