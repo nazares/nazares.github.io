@@ -338,7 +338,7 @@ blockquote span{
 .highlight {
     border: 1px solid rgba(0, 0, 0, 0.31);
     border-radius: 10px;
-    padding:2px 5px;
+    padding: 1px 5px;
 }
 
 iframe {
@@ -551,6 +551,9 @@ a[data-test-id*="login"]:hover {
         color: #eee;
     }
    
+   .highlight {
+       border-color: rgba(255, 255, 255, 0.31);
+   }
 }
 
 @media(max-width: 600px) {
