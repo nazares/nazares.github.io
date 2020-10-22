@@ -1,0 +1,64 @@
+.macos {
+    background-color: #3E7E86 !important;
+}
+
+.ios, .tvos, .watchos, .ipados, {
+   background-color: #4B7D96 !important;
+}
+
+/* Markup languages */
+
+.markdown, .css, .bbcode, .restructuredtext, textile, .tex, .latex, .sgml, .postscript, .rtf, .html, .xhtml, .xml, .vml, .pgml, .svg, .xbrl, .javadoc {
+    background-color: #54569A !important;
+}
+
+/* Locales */
+.en {
+    background-color: #1672DE !important;
+}
+
+.ru {
+    background-color: #DE3A43 !important;
+}
+
+
+.swift, .objective-c {
+    background-color: #3B8367 !important;
+}
+
+.swift a:before {
+    font-family: "Font Awesome 5 Brands";
+    content: "\f8e1\0020";
+}
+
+.publish {
+    background-color: #4B7D96 !important; 
+}
+
+.c, li[class*="c++"], li[class*="c#"] {
+    background-color: green !important;
+}
+
+li.tag {
+    margin-bottom: 0.5em;
+}
+
+.blog {
+    background-color: #be8b48 !important;
+}
+
+.introduction{ 
+    background-color: #54569A !important;
+}
+
+li.article a:before{
+    font-weight: bold;
+    font-family: "Font Awesome 5 Free";
+    content: '\f15c\0020';
+}
+
+.github a:before{
+    font-family: "Font Awesome 5 Brands";
+    content: '\f09b\0020';
+    padding-top: 1px;
+}  
