@@ -2,9 +2,18 @@
     background-color: #3E7E86 !important;
 }
 
-.ios, .tvos, .watchos, .ipados, {
-   background-color: #4B7D96 !important;
+.ios, .tvos, .watchos, .ipados {
+   /* background-color: #4B7D96 !important; */
+    background-color: #3E7E86 !important;
 }
+
+li[class*="apple watch"], .iphone, .ipad, .ipod, .imac, .macbook, li[class*="macbook pro"] {
+    background-color: #4D7196 !important;
+}
+
+/*.watchos {*/
+/*    background-color: #4B7D96 !important;*/
+/*}*/
 
 /* Markup languages */
 
@@ -40,7 +49,7 @@ li.c, li[class*="c++"], li[class*="c#"] {
 }
 
 li.tag {
-    margin-bottom: 3px;
+    margin-bottom: 6px;
 }
 
 .blog {
@@ -55,6 +64,10 @@ li.article a:before{
     font-weight: bold;
     font-family: "Font Awesome 5 Free";
     content: '\f15c\0020';
+}
+
+li.article a: before {
+    
 }
 
 .github a:before{
