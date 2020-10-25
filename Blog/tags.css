@@ -75,3 +75,8 @@ li.article a: before {
     content: '\f09b\0020';
     padding-top: 1px;
 }  
+
+li.how-to:before{
+    color:white;
+    padding-top: 1px;
+}
