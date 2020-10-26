@@ -1,7 +1,7 @@
 /* © Copyright 2020 Sergei Nazarenko
  * A Stylesheet for nazares.github.io
  */
-/* @import 'Blog/reset.css'; */
+@import 'Blog/reset.css';
 @import 'Blog/emoticons.css';
 @import 'Blog/tags.css';
 @import 'Blog/pygments-theme.css';
@@ -10,20 +10,20 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Caveat&family=Open+Sans&display=swap');
 
-* {
+/* * {
     margin: 0;
-   padding: 0;
+    padding: 0;
     box-sizing: border-box;
-}
+} */
 
 .wrapper p{
-    font-family: Helvetica Neue, Arial;
+   /* font-family: Helvetica Neue, Arial; */
     font-weight:300;
     line-height: 1.5em;
 }
 
 .quote {
-    font-family: Caveat;
+    font-family: 'Caveat', cursive;
     font-size:16pt;
 }
 
@@ -391,6 +391,7 @@ img {
 }
 
 img[src*="#thumbnail"] {
+    display: inline-block;
    width:300px;
    border: 15px solid #fff;
    box-shadow: 0 0 5px 1px #888;
@@ -415,7 +416,7 @@ span.break {
 
 blockquote{
     /* padding: 5px 20px 1px 20px; */
-    /* background-color: #EEEEEE; */
+    background-color: #F6F8FA;
     font-style:italic;
     font-size: 14pt;
     color: #555555;
@@ -429,7 +430,8 @@ blockquote{
 blockquote p {
     margin: 0;
     padding: 0;
-    font-family: 'Caveat', cursive !important;
+    font-family: 'Caveat', cursive;
+    color: #db7d7e;
 }
 
 
