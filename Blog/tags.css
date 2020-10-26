@@ -80,3 +80,19 @@ li.how-to:before{
     color:white;
     padding-top: 1px;
 }
+
+li.cheatsheet{
+    background-color: #498a4e !important;
+}
+
+li.cheatsheet a:before{
+    font-family: 'Font Awesome 5 Free';
+    content: '\f70e\0020';
+    padding-top: 1px;
+}
+
+li.git a:before{
+    font-family: "Font Awesome 5 Brands";
+    content: '\f841\0020';
+    padding-top: 1px;
+}
