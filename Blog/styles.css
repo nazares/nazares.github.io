@@ -235,6 +235,20 @@ img[alt="githubs"] {
     content: url(/Blog/img/articles/simple-blog-by-swift-and-publish/github_setnew.png)
 }
 
+a.link:after {
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+
+
+a.link:hover:after {
+    content: "\0020\f0c1";
+    font-family: "Font Awesome 5 Free";
+    font-size:14pt;
+  /*  text-decoration: none; */
+}
 /* Splash */
 
 

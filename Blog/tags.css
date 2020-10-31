@@ -66,10 +66,6 @@ li.article a:before{
     content: '\f15c\0020';
 }
 
-li.article a: before {
-    
-}
-
 .github a:before{
     font-family: "Font Awesome 5 Brands";
     content: '\f09b\0020';
