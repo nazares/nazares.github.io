@@ -495,9 +495,13 @@ blockquote span{
 }
 
 iframe {
+    border: none;
     border-radius: 20px;
     display: block;
-    margin:auto;
+/* margin: auto; */
+    margin: 1em auto 0 auto;
+    box-shadow: 0 0 2px 0 #000;
+}
 }
 
 .socials a {
