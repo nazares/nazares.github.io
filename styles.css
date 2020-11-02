@@ -225,8 +225,13 @@
      margin-right: 10px;
      padding: 6px 10px;
  }
- 
+ body>.wrapper {
+    min-height: calc(100vh - 300px);
+ }
+
  footer {
+     position: relative;
+     bottom:0;
      background: var(--header-bgcolor);
      color: var(--footer-color);
      font-size: 10pt;
