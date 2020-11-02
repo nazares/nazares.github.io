@@ -249,7 +249,7 @@
     color: red;
  }
 
- #anycomment-app button {
+ #anycomment-app button[class*="sc"] {
      background-color: red; 
  }
 
