@@ -266,6 +266,10 @@
  #anycomment-app footer[class*="sc"] ul span{
     font-size: 10pt;
 }
+ 
+ #anycomment-app ul[color] {
+     display: none;
+ }
 
  img[alt="githubn"] {
      content: url(/Blog/img/articles/simple-blog-by-swift-and-publish/github_new.png)
