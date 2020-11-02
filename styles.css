@@ -257,6 +257,9 @@
      color: var(--main-grey-color);
  } */
 
+ #anycomment-app footer[class*="sc"] ul {
+     font-size: 8pt;
+ }
 
  img[alt="githubn"] {
      content: url(/Blog/img/articles/simple-blog-by-swift-and-publish/github_new.png)
