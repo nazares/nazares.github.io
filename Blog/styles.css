@@ -247,7 +247,8 @@
  }
 
  #anycomment-app header[class*="sc"] {
-     background: #fff;
+     padding:0;
+     background: transparent;
  }
 
  #anycomment-app header[class*="sc"] span{
