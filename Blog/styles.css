@@ -251,11 +251,11 @@
  }
 
  #anycomment-app header[class*="sc"] span{
-    color: red;
+    color: var(--main-red-color);
  }
 
  #anycomment-app button[class*="sc"] {
-     background-color: red; 
+     background-color: var(--main-red-color); 
  }
 
  /* .ktGuED {
