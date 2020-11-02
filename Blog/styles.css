@@ -912,6 +912,11 @@
      .hXtGXC {
          display: none !important;
      }
+
+     a[title="AnyComment"] {
+         display: none;
+     } 
+
      img {
          border-radius: 5px;
      }
