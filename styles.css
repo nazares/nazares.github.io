@@ -248,6 +248,11 @@
  #anycomment-app header[class*="sc"] span{
     color: red;
  }
+
+ #anycomment-app button {
+     background-color: red; 
+ }
+
  .ktGuED {
      color: var(--main-grey-color);
  }
