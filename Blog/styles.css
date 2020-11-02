@@ -237,8 +237,12 @@
      color: var(--body-black-color);
  }
  
- footer[class*="sc"] {
-    background: none;
+ #anycomment-app footer[class*="sc"] {
+    background: transparent;
+ }
+
+ #anycomment-app header[class*="sc"] {
+     background: #fff;
  }
 
  .ktGuED {
