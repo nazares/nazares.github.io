@@ -1,22 +1,32 @@
 /* © Copyright 2020 Sergei Nazarenko
  * A Stylesheet for nazares.github.io
  */
+@import 'Blog/reset.css';
+@import 'Blog/emoticons.css';
+@import 'Blog/tags.css';
+@import 'Blog/pygments-theme.css';
+ 
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto:wght@100;400&family=Caveat&family=Open+Sans&display=swap');
+:root{
+    --main-red-color: HSL(357, 81%, 71%);
+    --main-red-hover-color: hsl(356, 70%, 55%);
+    --body-white-bgcolor: #fff;
+    --body-black-color: #000;
+    --header-bgcolor: #2D2D2F;
+    --header-color: #fff;
+    --header-black-color: #000;
+    --main-grey-color: #eee;
+    --footer-color: #8a8a8a;
+}
 
- @import 'Blog/reset.css';
- @import 'Blog/emoticons.css';
- @import 'Blog/tags.css';
- @import 'Blog/pygments-theme.css';
- 
- /* Import Google Fonts */
- 
- @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Caveat&family=Open+Sans&display=swap');
- .wrapper {
-     max-width: 900px;
-     margin-left: auto;
-     margin-right: auto;
-     padding: 20px;
-     text-align: left;
- }
+.wrapper {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    text-align: left;
+}
  
  .wrapper p {
      /* font-family: Helvetica Neue, Arial; */
@@ -25,28 +35,29 @@
  }
  
  .wrapper p>a {
-     color: #DE3A43;
+     color: var(--main-red-color);
      transition: 1s;
  }
  
  .wrapper p>a:hover {
-     color: #f1787e;
+    color: var(--main-red-hover-color);
  }
  
  body {
-     background: #fff;
-     color: #000;
+     background: var(--body-white-bgcolor);
+     color: var(--body-black-color);
      font-family: Helvetica, Arial;
      text-align: center;
+     height: 100vh;
  }
  
  header {
-     background-color: #2D2D2F;
+     background-color: var(--header-bgcolor);
  }
  
  header p,
  header a {
-     color: #fff;
+     color: var(--header-color);
  }
  
  header a {
@@ -67,7 +78,7 @@
  
  header .site-name {
      font-size: 1.5em;
-     color: #000;
+     color: var(--header-black-color);
      font-weight: bold;
  }
  
@@ -83,11 +94,11 @@
  
  nav li a.selected {
      text-decoration: underline;
-     color: #C25052;
+     color: var(--main-red-hover-color);
  }
  
  h1 {
-     margin-bottom: 1em;
+     margin-bottom: 0.5em;
      font-size: 2em;
  }
  
@@ -112,7 +123,7 @@
      display: block;
      padding: 20px;
      border-radius: 20px;
-     background-color: #eee;
+     background-color: var(--main-grey-color);
      margin-bottom: 20px;
  }
  
@@ -144,7 +155,7 @@
  }
  
  .red {
-     color: #DE3A43;
+     color: var(--main-red-hover-color);
  }
  
  .blue {
@@ -152,22 +163,22 @@
  }
  
  .lowIgj {
-     color: #8a8a8a;
+     color: var(--footer-color);
      margin-top: -0.5em;
      transition: 1s;
  }
  
  .lowIgj:hover {
-     color: #C25052;
+     color: var(--main-red-hover-color);
  }
  
  a[href*="/privacy"]:hover,
  a[href*="/terms"]:hover {
-     color: #C25052;
+     color: var(--main-red-hover-color);
  }
  
  button.ktwrLZ:hover {
-     background-color: #c15a5b;
+     background-color: var(--main-red-hover-color);
  }
  
  .task-list {
@@ -181,7 +192,7 @@
  .tag-list li,
  .tag {
      display: inline-block;
-     background-color: #000;
+     background-color: var(--body-black-color);
      /*  color: #ddd; */
      padding: 3px 6px;
      border-radius: 5px;
@@ -216,13 +227,21 @@
  }
  
  footer {
-     color: #8a8a8a;
+     background: var(--header-bgcolor);
+     color: var(--footer-color);
+     font-size: 10pt;
+     padding: 1em 0 0.5em 0;
  }
  
  #anycomment-app {
-     color: #000;
+     color: var(--body-black-color);
  }
  
+ .ktGuED {
+     color: var(--main-grey-color);
+ }
+
+
  img[alt="githubn"] {
      content: url(/Blog/img/articles/simple-blog-by-swift-and-publish/github_new.png)
  }
@@ -243,8 +262,7 @@
      font-size: 14pt;
      /*  text-decoration: none; */
  }
- 
- 
+  
  /* Splash */
  
  code {
@@ -254,7 +272,7 @@
      display: inline-block;
      border: 1px solid rgba(0, 0, 0, 0.31);
      border-radius: 10px;
-     padding: 0 5px;
+     padding: 0 10px;
  }
  
  img:after {
@@ -285,7 +303,7 @@
  .highlight:after {
      background: linear-gradient(to right, rgba(255, 255, 255, 0), white 100%);
  }
- 
+ /*
  pre code .keyword {
      color: #e73289;
  }
@@ -321,7 +339,7 @@
  pre code .preprocessing {
      color: #b68a00;
  }
- 
+ */
  .post-content>.highlight {
      line-height: 1;
      overflow-x: scroll;
@@ -471,13 +489,15 @@
      color: #db7d7e;
  }
  
+ /*
  blockquote::before {
      color: #78C0A8;
      position: absolute;
      left: 10px;
      top: -10px;
  }
- 
+ */
+
  blockquote span {
      display: block;
      color: #C25052;
@@ -557,11 +577,6 @@
      padding-bottom: 0 !important;
  }
  
- .foot {
-     margin-top: 1em;
-     font-size: 10pt;
- }
- 
  header[class*="sc"] {
      border-radius: 16px;
      padding: 1em;
@@ -583,11 +598,18 @@
      line-height: 18px;
      /* overflow: hidden; */
      padding: 15px 20px;
+     margin-bottom: 1em;
  }
  
  .note:before {
-     display: block;
-     padding-bottom: 10px;
+    /* display: block; */
+    /* padding-bottom: 10px; */
+    position: absolute;
+    top: -13px;
+    border-radius: 10px;
+    font-family: "Font Awesome 5 Free";
+    color: #fff;
+    padding: 3px 10px;
  }
  
  p.warning {
@@ -609,25 +631,26 @@
  }
  
  .warning:before {
-     background: #fff;
+     background: HSL(358, 66%, 36%);
+     /* border-radius: 5px;
      position: absolute;
      top: -10px;
-     color: #ff4e53;
-     font-family: "Font Awesome 5 Free", Arial;
-     font-weight: bold;
+     color: #ff4e53; */
+     /* font-family: "Font Awesome 5 Free", Arial; */
+     /* font-weight: bold; */
      content: '\f06a\00a0Warning';
-     padding: 0 5px 0 5px;
+     /* padding: 1px 5px 1px 5px; */
  }
  
  .tip:before {
-     background: #fff;
-     position: absolute;
-     top: -10px;
-     color: #3A8A3B;
-     font-family: "Font Awesome 5 Free", Arial;
-     font-weight: bold;
+    background: #3A8A3B;
+     /* position: absolute;
+     top: -10px; */
+     /* color: #3A8A3B; */
+     /* font-family: "Font Awesome 5 Free", Arial;
+     font-weight: bold; */
      content: '\f0eb\00a0Tip';
-     padding: 0 5px 0 5px;
+     /* padding: 0 5px 0 5px; */
  }
  
  .info:before {
@@ -740,13 +763,22 @@
      display: inline-block;
  }
  kbd {
-    /* font-size:12pt; */
-     background-color: #f5f5f5;
-     color: #555;
-     border: 1px solid #999;
-     border-radius: 6px;
-     padding: 3px 6px ;
-     box-shadow: 0 1px 1px 0 #aaa;    
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    font-size: 10pt;
+    font-family: Helvetica;
+    font-weight: normal; 
+    background-color: #f5f5f5;
+    color: #555;
+    border: 1px solid #999;
+    border-radius: 6px;
+/* line-height: 10px; */
+    padding: 3px 0px 0px 3px;
+    box-shadow: 0 1px 1px 0 #aaa;
+ }
+ keyboard {
+     display: inline-block;
  }
  img[alt="keyboard"] {
     box-shadow: none;
@@ -817,15 +849,7 @@
      code {
          border: 1px solid rgba(255, 255, 255, 0.31);
      }
-     .warning:before {
-         background: #222;
-     }
-     .info:before {
-         background: #222;
-     }
-     .tip:before {
-         background: #222;
-     }
+  
      img[alt="github-new"] {
          content: url(/Blog/img/articles/simple-blog-by-swift-and-publish/github-new_d.png)
      }
