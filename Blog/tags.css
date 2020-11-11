@@ -92,3 +92,7 @@ li.git a:before{
     content: '\f841\0020';
     padding-top: 1px;
 }
+
+li[class*="adobe flash"] {
+    background-color: #5D050D!important;
+}
